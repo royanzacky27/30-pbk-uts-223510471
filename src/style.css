@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* light mode css variables */
+    --light-gray: hsl(0, 0%, 98%);
+    --light-gray-blue: hsl(236, 11%, 98%);
+    --dark-gray-blue: hsl(236, 9%, 61%);
+    --very-dark-gray-blue: hsl(235, 19%, 35%);
+
+    /* dark mode css variables */
+    --dark-blue: hsl(235, 21%, 11%);
+    --dark-desaturated-blue: hsl(235, 24%, 19%);
+    --gray-blue: hsl(234, 39%, 85%);
+    --gray-blue-hover: hsl(236, 33%, 92%);
+    --dark-gray-blue: hsl(235, 11%, 52%);
+    --very-dark-gray-blue: hsl(237, 14%, 26%);
+  }
+
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+div.main{
+  @apply bg-no-repeat;
+  @apply bg-auto;
+  @apply justify-center;
+  @apply flex;
+  @apply font-thin;
+  @apply bg-[length:100%_250px];
+  @apply text-[color:var(--very-dark-gray-blue)];
+  @apply text-[color:var(--very-dark-gray-blue)];
+  @apply w-full;
+  @apply h-full;
+}
+
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
