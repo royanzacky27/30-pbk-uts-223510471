@@ -1,7 +1,16 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import { createPinia } from 'pinia'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import { Quasar } from 'quasar';
+import App from './App.vue';
+import router from './router';
+import 'quasar/dist/quasar.css';
 
-// createApp(App).mount('#app')§
-createApp(App).use(createPinia()).mount('#app')
+const app = createApp(App);
+
+app.use(createPinia());
+app.use(router);
+app.use(Quasar, {
+  plugins: {},
+});
+
+app.mount('#app');
